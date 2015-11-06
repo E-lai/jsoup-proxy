@@ -1,11 +1,11 @@
 package org.jsoup;
 
 import org.jsoup.nodes.Document;
-import org.jsoup.parser.HtmlTreeBuilder;
 import org.jsoup.parser.Parser;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.Proxy;
 import java.net.URL;
 import java.util.Collection;
 import java.util.Map;
@@ -257,6 +257,12 @@ public interface Connection {
      * @throws IOException on error
      */
     Response execute() throws IOException;
+    
+    /**
+     * Set the connection Proxy 
+     * @return a response object
+     */
+    Connection proxy(String host, int port) throws IOException;
 
     /**
      * Get the request object associated with this connection
@@ -527,7 +533,11 @@ public interface Connection {
          * @return character set to encode post data
          */
         String postDataCharset();
+        
+        
+        void setProxy(String host, int port);
 
+        Proxy getProxy();
     }
 
     /**
