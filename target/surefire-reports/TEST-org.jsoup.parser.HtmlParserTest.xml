@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.34" errors="0" skipped="0" tests="97" name="org.jsoup.parser.HtmlParserTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Users/liux/glassfish4/jdk7/jre/lib"/>
+    <property name="java.vm.version" value="24.45-b08"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/liux/Documents/workspace/jsoup"/>
+    <property name="java.runtime.version" value="1.7.0_45-b18"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Users/liux/glassfish4/jdk7/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/xx/cvwcdmmd2lb027npmk2m5f740000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/liux/work/java/apache-maven-3.2.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/liux/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.11.1"/>
+    <property name="user.home" value="/Users/liux"/>
+    <property name="user.timezone" value="Asia/Chongqing"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="liux"/>
+    <property name="java.class.path" value="/Users/liux/work/java/apache-maven-3.2.3/boot/plexus-classworlds-2.5.1.jar"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Users/liux/glassfish4/jdk7/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_45"/>
+    <property name="java.ext.dirs" value="/Users/liux/Library/Java/Extensions:/Users/liux/glassfish4/jdk7/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Users/liux/glassfish4/jdk7/jre/lib/resources.jar:/Users/liux/glassfish4/jdk7/jre/lib/rt.jar:/Users/liux/glassfish4/jdk7/jre/lib/sunrsasign.jar:/Users/liux/glassfish4/jdk7/jre/lib/jsse.jar:/Users/liux/glassfish4/jdk7/jre/lib/jce.jar:/Users/liux/glassfish4/jdk7/jre/lib/charsets.jar:/Users/liux/glassfish4/jdk7/jre/lib/jfr.jar:/Users/liux/glassfish4/jdk7/jre/lib/JObjC.jar:/Users/liux/glassfish4/jdk7/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/liux/work/java/apache-maven-3.2.3"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="parsesSimpleDocument"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="parsesRoughAttributes"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="parsesQuiteRoughAttributes"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="parsesComments"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="parsesUnterminatedComments"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="dropsUnterminatedTag"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="dropsUnterminatedAttribute"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="parsesUnterminatedTextarea"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="parsesUnterminatedOption"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="testSpaceAfterTag"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="createsDocumentStructure"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="createsStructureFromBodySnippet"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesEscapedData"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesDataOnlyTags"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesTextAfterData"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesTextArea"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="preservesSpaceInTextArea"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="preservesSpaceInScript"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="doesNotCreateImplicitLists"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="discardsNakedTds"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesNestedImplicitTable"/>
+  <testcase time="0.002" classname="org.jsoup.parser.HtmlParserTest" name="handlesWhatWgExpensesTableExample"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesTbodyTable"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesImplicitCaptionClose"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="noTableDirectInTable"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="ignoresDupeEndTrTag"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesBaseTags"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesProtocolRelativeUrl"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesCdata"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnclosedCdataAtEOF"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesInvalidStartTags"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnknownTags"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnknownInlineTags"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="parsesBodyFragment"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnknownNamespaceTags"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesKnownEmptyBlocks"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesSolidusAtAttributeEnd"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesMultiClosingBody"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnclosedDefinitionLists"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesBlocksInDefinitions"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesFrames"/>
+  <testcase time="0.002" classname="org.jsoup.parser.HtmlParserTest" name="ignoresContentAfterFrameset"/>
+  <testcase time="0.002" classname="org.jsoup.parser.HtmlParserTest" name="handlesJavadocFont"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesBaseWithoutHref"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="normalisesDocument"/>
+  <testcase time="0.002" classname="org.jsoup.parser.HtmlParserTest" name="normalisesEmptyDocument"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="normalisesHeadlessBody"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="normalisedBodyAfterContent"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="findsCharsetInMalformedMeta"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="testHgroup"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="testRelaxedTags"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="testHeaderContents"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="testSpanContents"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="testNoImagesInNoScriptInHead"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="testAFlowContents"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="testFontFlowContents"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesMisnestedTagsBI"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesMisnestedTagsBP"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnexpectedMarkupInTables"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnclosedFormattingElements"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnclosedAnchors"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="reconstructFormattingElements"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="reconstructFormattingElementsInTable"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="commentBeforeHtml"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="emptyTdTag"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesSolidusInA"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesSpanInTbody"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnclosedTitleAtEof"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnclosedTitle"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnclosedScriptAtEof"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesUnclosedRawtextAtEof"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="noImplicitFormForTextAreas"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesEscapedScript"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handles0CharacterAsText"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesNullInData"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesNullInComments"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesNewlinesAndWhitespaceInTag"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesWhitespaceInoDocType"/>
+  <testcase time="0.002" classname="org.jsoup.parser.HtmlParserTest" name="tracksErrorsWhenRequested"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="tracksLimitedErrorsWhenRequested"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="noErrorsByDefault"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesCommentsInTable"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesQuotesInCommentsInScripts"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handleNullContextInParseFragment"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="doesNotFindShortestMatchingEntity"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="relaxedBaseEntityMatchAndStrictExtendedMatch"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesXmlDeclarationAsBogusComment"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesTagsInTextarea"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="createsFormElements"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="associatedFormControlsWithDisjointForms"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="handlesInputInTable"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="convertsImageToImg"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="handlesInvalidDoctypes"/>
+  <testcase time="0.284" classname="org.jsoup.parser.HtmlParserTest" name="handlesManyChildren"/>
+  <testcase time="0.004" classname="org.jsoup.parser.HtmlParserTest" name="testInvalidTableContents"/>
+  <testcase time="0.001" classname="org.jsoup.parser.HtmlParserTest" name="testNormalisesIsIndex"/>
+  <testcase time="0" classname="org.jsoup.parser.HtmlParserTest" name="testReinsertionModeForThCelss"/>
+</testsuite>

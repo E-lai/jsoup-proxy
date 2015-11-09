@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Export-Package: org.jsoup;uses:="org.jsoup.parser,org.jsoup.nodes,org.
+ jsoup.helper,org.jsoup.safety";version="1.8.4.SNAPSHOT",org.jsoup.exa
+ mples;uses:="org.jsoup.select,org.jsoup.nodes,org.jsoup.helper,org.js
+ oup";version="1.8.4.SNAPSHOT",org.jsoup.helper;uses:="org.jsoup.parse
+ r,org.jsoup.select,org.jsoup.nodes,org.jsoup,javax.net.ssl,org.w3c.do
+ m,javax.xml.transform,javax.xml.transform.stream,javax.xml.parsers,ja
+ vax.xml.transform.dom";version="1.8.4.SNAPSHOT",org.jsoup.nodes;uses:
+ ="org.jsoup.helper,org.jsoup.parser,org.jsoup.select,org.jsoup";versi
+ on="1.8.4.SNAPSHOT",org.jsoup.parser;uses:="org.jsoup.helper,org.jsou
+ p.select,org.jsoup.nodes";version="1.8.4.SNAPSHOT",org.jsoup.safety;u
+ ses:="org.jsoup.select,org.jsoup.nodes,org.jsoup.parser,org.jsoup.hel
+ per";version="1.8.4.SNAPSHOT",org.jsoup.select;uses:="org.jsoup.nodes
+ ,org.jsoup.helper,org.jsoup.parser";version="1.8.4.SNAPSHOT"
+Tool: Bnd-0.0.357
+Bundle-Name: jsoup
+Created-By: 1.7.0_45 (Oracle Corporation)
+Bundle-Vendor: Jonathan Hedley
+Bundle-Version: 1.8.4.SNAPSHOT
+Bnd-LastModified: 1446805057881
+Bundle-ManifestVersion: 2
+Bundle-License: http://jsoup.org/license
+Bundle-Description: jsoup HTML parser
+Import-Package: javax.net.ssl,javax.xml.parsers,javax.xml.transform,ja
+ vax.xml.transform.dom,javax.xml.transform.stream,org.jsoup;version="1
+ .8",org.jsoup.examples;version="1.8",org.jsoup.helper;version="1.8",o
+ rg.jsoup.nodes;version="1.8",org.jsoup.parser;version="1.8",org.jsoup
+ .safety;version="1.8",org.jsoup.select;version="1.8",org.w3c.dom
+Bundle-SymbolicName: org.jsoup
+Bundle-DocURL: http://jsoup.org/
+Originally-Created-By: 1.7.0_45 (Oracle Corporation)
+
