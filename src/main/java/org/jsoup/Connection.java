@@ -262,7 +262,7 @@ public interface Connection {
      * Set the connection Proxy 
      * @return a response object
      */
-    Connection proxy(String host, int port) throws IOException;
+    Connection proxy(String host, int port,String auth) throws IOException;
 
     /**
      * Get the request object associated with this connection
@@ -535,9 +535,11 @@ public interface Connection {
         String postDataCharset();
         
         
-        void setProxy(String host, int port);
+        void setProxy(String host, int port,String auth);
 
         Proxy getProxy();
+        
+        String getProxyAuthorization();
     }
 
     /**

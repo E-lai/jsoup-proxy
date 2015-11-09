@@ -364,6 +364,7 @@ public class HttpConnection implements Connection {
         private boolean validateTSLCertificates = true;
         private String postDataCharset = DataUtil.defaultCharset;
         private Proxy proxy = null;
+        private String proxyAuthorization = null;
 
         private Request() {
             timeoutMilliseconds = 3000;
@@ -389,8 +390,14 @@ public class HttpConnection implements Connection {
             return maxBodySizeBytes;
         }
         
-        public void setProxy(String host, int port){
-        	this.proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(host, port));  
+        public void setProxy(String host, int port,String auth){
+        	if(auth == null){
+        		this.proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(host, port));  
+        	}else{
+        		this.proxy = new Proxy(Proxy.Type.HTTP, new InetSocketAddress(host, port));
+        		this.proxyAuthorization = auth;
+        	}
+        	
         }
 
         public Connection.Request maxBodySize(int bytes) {
@@ -467,6 +474,10 @@ public class HttpConnection implements Connection {
 
 		public Proxy getProxy() {
 			return this.proxy;
+		}
+
+		public String getProxyAuthorization() {
+			return this.proxyAuthorization;
 		}
     }
 
@@ -640,8 +651,11 @@ public class HttpConnection implements Connection {
         	HttpURLConnection conn = null;
         	if(req.getProxy() != null){
         		conn = (HttpURLConnection) req.url().openConnection(req.getProxy());
+        		if(req.getProxyAuthorization() != null){
+        			conn.setRequestProperty("Proxy-Authorization",req.getProxyAuthorization());
+        		}
         	}else{
-        		conn = (HttpURLConnection) req.url().openConnection();;
+        		conn = (HttpURLConnection) req.url().openConnection();
         	}
             conn.setRequestMethod(req.method().name());
             conn.setInstanceFollowRedirects(false); // don't rely on native redirection support
@@ -665,7 +679,7 @@ public class HttpConnection implements Connection {
             }
             return conn;
         }
-
+        
         /**
          * Instantiate Hostname Verifier that does nothing.
          * This is used for connections with disabled SSL certificates validation.
@@ -967,8 +981,9 @@ public class HttpConnection implements Connection {
         }
     }
 
-	public Connection proxy(String host, int port) throws IOException {
-		this.req.setProxy(host,port);
+	public Connection proxy(String host, int port,String auth) throws IOException {
+		this.req.setProxy(host,port,auth);
 		return this;
 	}
+	
 }
